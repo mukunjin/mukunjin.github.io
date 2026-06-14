@@ -1,0 +1,6 @@
+node_modules/
+.deploy_git/
+public/
+.cache/
+db.json
+package-lock.json
