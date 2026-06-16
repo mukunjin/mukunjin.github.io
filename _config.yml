@@ -3,13 +3,20 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Mukun Jin
 subtitle: ''
-description: ''
+description: Mukun Jin
 keywords:
-author: John Doe
-language: en
+author: Mukun Jin
+language: zh-CN
 timezone: ''
+
+# Search
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -96,7 +103,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

@@ -1,0 +1,503 @@
+# ===============================================================
+# NexT Theme Configuration
+# ===============================================================
+
+# ---------------------------------------------------------------
+# Theme Core Configuration Settings
+# ---------------------------------------------------------------
+
+cache:
+  enable: true
+
+minify: false
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
+scheme: Gemini
+
+darkmode: true
+
+lightdark:
+  enable: false
+  check_supports: true
+
+# ---------------------------------------------------------------
+# Site Information Settings
+# ---------------------------------------------------------------
+
+favicon:
+  small: /images/avatar.webp
+  medium: /images/avatar.webp
+  apple_touch_icon: /images/avatar.webp
+  safari_pinned_tab: /images/avatar.webp
+
+creative_commons:
+  license: by-nc-sa
+  size: small
+  sidebar: false
+  post: false
+  language:
+
+open_graph:
+  enable: true
+  options:
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  categories: /categories/ || fa fa-th
+
+menu_settings:
+  icons: true
+  badges: false
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+
+sidebar:
+  position: left
+  width_expanded: 320
+  width_dual_column: 240
+  display: post
+  padding: 18
+  offset: 12
+
+avatar:
+  url: /images/avatar.webp
+  rounded: true
+  rotated: false
+
+site_state: true
+
+social:
+  GitHub: https://github.com/mukunjin || fab fa-github
+  X: https://x.com/mukunjin || fab fa-x-twitter
+  YouTube: https://www.youtube.com/channel/UCZK8bFbZWGz10IxlRO6cWkg || fab fa-youtube
+
+social_icons:
+  enable: true
+  icons_only: true
+  transition: false
+
+links_settings:
+  icon: fa fa-globe
+  layout: block
+
+links:
+
+toc:
+  enable: true
+  number: true
+  wrap: false
+  expand_all: false
+  max_depth: 6
+
+# ---------------------------------------------------------------
+# Footer Settings
+# ---------------------------------------------------------------
+
+language_switcher: false
+
+footer:
+  icon:
+    name: fa fa-heart
+    animated: false
+    color: "#ff0000"
+  copyright:
+  powered: false
+  beian:
+    enable: false
+    icp:
+    gongan_id:
+    gongan_num:
+    gongan_icon_url:
+
+# ---------------------------------------------------------------
+# Post Settings
+# ---------------------------------------------------------------
+
+excerpt_description: true
+read_more_btn: true
+
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at:
+    enable: true
+    another_day: true
+  categories: true
+
+symbols_count_time:
+  separated_meta: true
+  item_text_total: false
+
+tag_icon: false
+
+reward_settings:
+  enable: false
+  animation: false
+
+reward:
+
+follow_me:
+
+related_posts:
+  enable: false
+  icon: fa fa-signs-post
+
+post_edit:
+  enable: false
+  url:
+
+post_navigation: left
+
+# ---------------------------------------------------------------
+# Custom Page Settings
+# ---------------------------------------------------------------
+
+tagcloud:
+  min: 12
+  max: 30
+  amount: 200
+  orderby: name
+  order: 1
+
+calendar:
+  calendar_id:
+  api_key:
+  orderBy: startTime
+  showLocation: false
+  offsetMax: 72
+  offsetMin: 4
+  showDeleted: false
+  singleEvents: true
+  maxResults: 250
+
+# ---------------------------------------------------------------
+# Misc Theme Settings
+# ---------------------------------------------------------------
+
+preconnect: true
+
+text_align:
+  desktop: justify
+  mobile: justify
+
+mobile_layout_economy: false
+
+theme_color:
+  light: "#222"
+  dark: "#222"
+
+body_scrollbar:
+  overlay: false
+  stable: false
+
+codeblock:
+  theme:
+    light: default
+    dark: stackoverflow-dark
+  prism:
+    light: prism
+    dark: prism-dark
+  copy_button:
+    enable: true
+    style:
+  fold:
+    enable: false
+    height: 500
+  language: true
+
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: false
+
+reading_progress:
+  enable: false
+  start_at: left
+  position: top
+  reversed: false
+  color: "#37c6c0"
+  height: 3px
+
+bookmark:
+  enable: false
+  color: "#222"
+  save: auto
+
+github_banner:
+  enable: false
+  permalink: https://github.com/mukunjin
+
+# ---------------------------------------------------------------
+# Font Settings
+# ---------------------------------------------------------------
+
+font:
+  enable: false
+  host:
+  global:
+    external: false
+    family:
+    size:
+  title:
+    external: false
+    family:
+    size:
+  headings:
+    external: false
+    family:
+    size:
+  posts:
+    external: false
+    family:
+  codes:
+    external: false
+    family:
+
+# ---------------------------------------------------------------
+# SEO Settings
+# ---------------------------------------------------------------
+
+index_with_subtitle: false
+
+exturl: false
+exturl_icon: true
+
+google_site_verification:
+bing_site_verification:
+yandex_site_verification:
+baidu_site_verification:
+
+# ---------------------------------------------------------------
+# Tags Settings
+# ---------------------------------------------------------------
+
+note:
+  style: simple
+  icons: false
+  light_bg_offset: 0
+
+tabs:
+  sticky: false
+  transition:
+    tabs: false
+    labels: true
+
+pdf:
+  enable: false
+  height: 500px
+
+mermaid:
+  enable: false
+  theme:
+    light: default
+    dark: dark
+
+wavedrom:
+  enable: false
+
+# ---------------------------------------------------------------
+# Third Party Plugins & Services Settings
+# ---------------------------------------------------------------
+
+math:
+  every_page: false
+  mathjax:
+    enable: false
+    tags: none
+  katex:
+    enable: false
+    copy_tex: false
+
+pjax: false
+fancybox: false
+mediumzoom: false
+lazyload: false
+pangu: false
+
+quicklink:
+  enable: false
+  home: false
+  archive: false
+  delay: true
+  timeout: 3000
+  priority: true
+
+# ---------------------------------------------------------------
+# Animation Settings
+# ---------------------------------------------------------------
+
+motion:
+  enable: true
+  async: true
+  duration: 50
+  transition:
+    menu_item: fadeInDown
+    post_block: fadeIn
+    post_header: fadeInDown
+    post_body: fadeInDown
+    coll_header: fadeInLeft
+    sidebar: fadeInUp
+
+pace:
+  enable: false
+  color: blue
+  theme: minimal
+
+canvas_ribbon:
+  enable: false
+  size: 300
+  alpha: 0.6
+  zIndex: -1
+
+# ---------------------------------------------------------------
+# Comments Settings
+# ---------------------------------------------------------------
+
+comments:
+  style: tabs
+  active:
+  storage: true
+  lazyload: false
+  nav:
+
+disqus:
+  enable: false
+  shortname:
+  count: true
+
+disqusjs:
+  enable: false
+  api:
+  apikey:
+  shortname:
+
+livere_uid:
+
+gitalk:
+  enable: false
+  github_id:
+  repo:
+  client_id:
+  client_secret:
+  admin_user:
+  distraction_free_mode: true
+  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
+  language:
+  body:
+
+utterances:
+  enable: false
+  repo: user-name/repo-name
+  issue_term: pathname
+  theme: github-light
+
+isso:
+
+# ---------------------------------------------------------------
+# Post Widgets & Content Sharing Services
+# ---------------------------------------------------------------
+
+addtoany:
+  enable: false
+  buttons:
+
+# ---------------------------------------------------------------
+# Statistics and Analytics
+# ---------------------------------------------------------------
+
+google_analytics:
+  tracking_id:
+  only_pageview: false
+  measure_protocol_api_secret:
+
+baidu_analytics:
+
+cloudflare_analytics:
+
+clarity_analytics:
+
+matomo:
+  enable: false
+  server_url:
+  site_id:
+
+umami:
+  enable: false
+  script_url:
+  website_id:
+  host_url:
+
+plausible:
+  enable: false
+  script_url:
+  site_domain:
+
+firestore:
+  enable: false
+  collection: articles
+  apiKey:
+  projectId:
+
+busuanzi_count:
+  enable: false
+  total_visitors: true
+  total_visitors_icon: fa fa-user
+  total_views: true
+  total_views_icon: fa fa-eye
+  post_views: true
+  post_views_icon: far fa-eye
+
+# ---------------------------------------------------------------
+# Search Services
+# ---------------------------------------------------------------
+
+algolia_search:
+  enable: false
+  hits:
+    per_page: 10
+
+local_search:
+  enable: true
+  top_n_per_article: 1
+  unescape: false
+  preload: false
+
+# ---------------------------------------------------------------
+# Chat Services
+# ---------------------------------------------------------------
+
+chat:
+  enable: false
+  icon: fa fa-comment
+
+chatra:
+  enable: false
+  async: true
+  id:
+
+tidio:
+  enable: false
+  key:
+
+# ---------------------------------------------------------------
+# CDN Settings
+# ---------------------------------------------------------------
+
+vendors:
+  internal: jsdelivr
+  plugins: jsdelivr
+  custom_cdn_url:
+
+css: css
+js: js
+images: images
