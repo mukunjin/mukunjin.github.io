@@ -18,7 +18,6 @@
 │   └── images/         # 图片资源
 ├── themes/
 │   └── PaperMod/       # 主题（git submodule）
-├── deploy.ps1          # 部署脚本
 ├── hugo.toml           # Hugo 配置
 ├── .gitignore
 └── README.md
@@ -52,7 +51,7 @@ categories: ["分类名"]
 
 ## 部署
 
-### 推送源码
+推送到 `main` 分支后，GitHub Actions 会自动构建并部署到 GitHub Pages：
 
 ```bash
 git add .
@@ -60,17 +59,14 @@ git commit -m "update blog"
 git push
 ```
 
-### 构建并部署到 gh-pages
+**首次使用需在 GitHub 仓库设置中配置：**
+1. 打开 `https://github.com/mukunjin/mukunjin/settings/pages`
+2. 在 **Source** 下选择 **GitHub Actions**
 
-```bash
-.\deploy.ps1
-```
-
-脚本会运行 `hugo` 生成静态文件，然后通过 `git subtree push` 将 `public/` 推送到 `gh-pages` 分支。
+之后每次 push 都会自动触发构建和部署。
 
 ## 主要配置
 
 | 文件 | 说明 |
 |------|------|
 | `hugo.toml` | 网站标题、描述、菜单、社交链接、主题配置 |
-| `deploy.ps1` | 本地构建并部署到 gh-pages 分支的脚本 |
