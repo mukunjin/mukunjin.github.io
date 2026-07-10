@@ -60,7 +60,7 @@ git push
 ```
 
 **首次使用需在 GitHub 仓库设置中配置：**
-1. 打开 `https://github.com/mukunjin/mukunjin/settings/pages`
+1. 打开 `https://github.com/mukunjin/mukunjin.github.io/settings/pages`
 2. 在 **Source** 下选择 **GitHub Actions**
 
 之后每次 push 都会自动触发构建和部署。
