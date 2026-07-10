@@ -1,0 +1,97 @@
+baseURL = 'https://mukunjin.github.io/'
+locale = 'zh-cn'
+title = 'Mukun Jin'
+theme = 'PaperMod'
+publishDir = 'public'
+copyright = '© 2026 Mukun Jin. All rights reserved.'
+
+[pagination]
+pagerSize = 10
+
+[params]
+description = 'Mukun Jin的个人博客'
+author = 'Mukun Jin'
+defaultTheme = 'auto'
+ShowReadingTime = false
+ShowShareButtons = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = false
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
+ShowSearch = true
+
+[params.homeInfoParams]
+Title = '我的博客'
+Content = '写自己想写的内容，做自己想做的事情。'
+
+[[params.socialIcons]]
+name = 'github'
+url = 'https://github.com/mukunjin'
+
+[[params.socialIcons]]
+name = 'twitter'
+url = 'https://x.com/mukunjin'
+
+[[params.socialIcons]]
+name = 'youtube'
+url = 'https://www.youtube.com/channel/UCZK8bFbZWGz10IxlRO6cWkg'
+
+[[params.socialIcons]]
+name = 'instagram'
+url = 'https://www.instagram.com/mukun_jin/'
+
+[params.assets]
+favicon = '/images/avatar.webp'
+favicon16x16 = '/images/avatar.webp'
+favicon32x32 = '/images/avatar.webp'
+apple_touch_icon = '/images/avatar.webp'
+
+[params.fuseOpts]
+isCaseSensitive = false
+shouldSort = true
+location = 0
+distance = 1000
+threshold = 0.4
+minMatchCharLength = 0
+keys = ['title', 'permalink', 'summary', 'content']
+
+[menu]
+
+[[menu.main]]
+identifier = 'posts'
+name = '文章'
+url = '/posts/'
+weight = 10
+
+[[menu.main]]
+identifier = 'categories'
+name = '分类'
+url = '/categories/'
+weight = 20
+
+[[menu.main]]
+identifier = 'search'
+name = '搜索'
+url = '/search/'
+weight = 30
+
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+
+[outputs]
+home = ['HTML', 'RSS', 'JSON']
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true

@@ -1,65 +1,76 @@
 # Mukun Jin's Blog
 
-基于 Hexo 与 NexT 主题构建的个人博客，部署于 GitHub Pages。
+基于 Hugo 与 PaperMod 主题构建的个人博客，部署于 GitHub Pages。
 
 ## 技术栈
 
-- Hexo 8
-- NexT 主题（Gemini Scheme）
-- Node.js
+- Hugo
+- PaperMod 主题
+- Markdown
 
 ## 目录结构
 
 ```
 .
-├── source/
-│   ├── _posts/          # 文章源文件（Markdown）
-│   ├── categories/      # 分类页面
-│   └── images/          # 图片资源
-├── _config.yml          # Hexo 主配置
-├── _config.next.yml     # NexT 主题配置
-└── package.json
+├── content/
+│   └── posts/          # 文章源文件（Markdown）
+├── static/
+│   └── images/         # 图片资源
+├── themes/
+│   └── PaperMod/       # 主题（git submodule）
+├── deploy.ps1          # 部署脚本
+├── hugo.toml           # Hugo 配置
+├── .gitignore
+└── README.md
 ```
 
 ## 本地运行
 
 ```bash
-npm install
-npx hexo server
+hugo server
 ```
 
-默认在 `http://localhost:4000` 启动。
+默认在 `http://localhost:1313` 启动。
 
 ## 写作
 
 新建文章：
 
 ```bash
-npx hexo new post "article-title"
+hugo new content posts/article-title.md
 ```
 
-在 `source/_posts/` 下编辑对应的 Markdown 文件。Front-matter 示例：
+在 `content/posts/` 下编辑对应的 Markdown 文件。Front-matter 示例：
 
 ```yaml
 ---
-title: 文章标题
+title: "文章标题"
 date: 2026-06-16
-categories: 分类名
+categories: ["分类名"]
 ---
 ```
 
 ## 部署
 
+### 推送源码
+
 ```bash
-npm run build
-npm run deploy
+git add .
+git commit -m "update blog"
+git push
 ```
 
-部署目标配置于 `_config.yml` 的 `deploy` 字段，指向 `gh-pages` 分支。
+### 构建并部署到 gh-pages
+
+```bash
+.\deploy.ps1
+```
+
+脚本会运行 `hugo` 生成静态文件，然后通过 `git subtree push` 将 `public/` 推送到 `gh-pages` 分支。
 
 ## 主要配置
 
 | 文件 | 说明 |
 |------|------|
-| `_config.yml` | 网站标题、描述、URL、部署目标 |
-| `_config.next.yml` | 主题外观、菜单、侧边栏、动画、社交链接 |
+| `hugo.toml` | 网站标题、描述、菜单、社交链接、主题配置 |
+| `deploy.ps1` | 本地构建并部署到 gh-pages 分支的脚本 |

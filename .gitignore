@@ -1,6 +1,4 @@
-node_modules/
-.deploy_git/
-public/
-.cache/
-db.json
-package-lock.json
+/public/
+/resources/
+/.hugo_build.lock
+/.deploy/
